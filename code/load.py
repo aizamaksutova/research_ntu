@@ -11,7 +11,7 @@ tensor1 = torch.randn(tensor_size).to(device)
 tensor2 = torch.randn(tensor_size).to(device)
 
 # Perform frequent data transfers between CPU and GPU
-for i in range(1000):  # Adjust the number of iterations as per your requirements
+for i in range(5000):  # Adjust the number of iterations as per your requirements
     tensor1 = tensor1.to('cpu')
     tensor2 = tensor2.to(device)
     tensor1 = tensor1.to(device)
